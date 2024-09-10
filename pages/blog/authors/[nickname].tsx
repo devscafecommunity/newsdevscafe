@@ -8,33 +8,6 @@ import AuthorPostHeader from "@/components/blog/AuthorHeader";
 
 // Chackra components
 import { useToast } from "@chakra-ui/react";
-import { ClassNames } from "@emotion/react";
-
-// make an request for: http://localhost:3000/api/blog/author/[nickname]
-/*
-Return:
-[
-  {
-    "id": "e3b7d032-44bd-4a77-8fef-6472617d5c21",
-    "title": "Titulo do post",
-    "description": "Descrição do post etc…",
-    "cover": "https://i.imgur.com/SL6jvOr.png",
-    "slug": "test",
-    "tags": [
-      "test"
-    ],
-    "created_time": "2024-09-07T19:02:00.000Z",
-    "last_edited_time": "2024-09-09T09:27:00.000Z",
-    "author": {
-      "id": "2439e043-c4de-4dac-8bca-225299af2a76",
-      "name": "Pedro Kaleb De Je1",
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKbcJ0_7ZFPqvQfRPCFhcmW3idKldcPxpZVGsTPwSfT3Yw4pM3s=s100",
-      "email": "pedrokalebdej1@gmail.com"
-    },
-    "content": []
-  }
-]
-*/
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const { nickname } = context.params ?? {};

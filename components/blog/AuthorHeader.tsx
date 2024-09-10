@@ -41,17 +41,14 @@ data:
 
 // Chakra
 import { Image } from "@chakra-ui/react";
-import { Text, Heading, Divider } from "@chakra-ui/react";
-import { useToast } from "@chakra-ui/react";
+import { Text, Heading } from "@chakra-ui/react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
-import { Tag, Input } from "@chakra-ui/react";
 
 import {
   Stat,
   StatLabel,
   StatNumber,
   StatHelpText,
-  StatArrow,
   StatGroup,
 } from "@chakra-ui/react";
 
@@ -59,7 +56,7 @@ import {
 import { motion } from "framer-motion";
 
 // React
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 // Icons
 import {

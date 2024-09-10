@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 // page.test/api/blog/posts/[slug].tsx
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<any> {
   const { slug } = req.query;
   try {
     const data = await getPostDataSimplifiedBySlug(slug as string);

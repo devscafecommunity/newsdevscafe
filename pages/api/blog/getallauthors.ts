@@ -2,7 +2,7 @@ import { getAuthors } from '../../../utils/Blog';
 
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<any> {
   try {
     const authors = await getAuthors();
     res.status(200).json(authors);

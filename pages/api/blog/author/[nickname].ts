@@ -1,13 +1,13 @@
 import { getAuthorPosts, getAuthorDataSimplifyedByNickname } from "@/utils/Blog";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<any> {
   const { nickname } = req.query;
   try {
     const author = await getAuthorDataSimplifyedByNickname(nickname as string);
     const posts = await getAuthorPosts(nickname as string);
 
-    let data = {
+    const data = {
         ...author,
         posts: posts
     }

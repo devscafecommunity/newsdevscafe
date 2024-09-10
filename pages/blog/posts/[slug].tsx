@@ -1,5 +1,4 @@
 import { NotionRenderer } from "@notion-render/client";
-import { notFound } from "next/navigation";
 
 //Plugins
 import hljsPlugin from "@notion-render/hljs-plugin";
@@ -7,7 +6,6 @@ import bookmarkPlugin from "@notion-render/bookmark-plugin";
 
 // React next
 import { GetServerSideProps } from "next"; // Next server side props
-import { useRouter } from "next/router"; // Routing
 import { useEffect, useState } from "react"; // React
 
 // Notion client
@@ -16,9 +14,6 @@ import { notionClient } from "@/utils/Blog";
 // Components
 import RenderPosts from "@/components/blog/RenderPosts";
 import PostHeader from "@/components/blog/PostHeader";
-
-// Chackra UI
-import { Text, Heading, Image } from "@chakra-ui/react";
 
 // Cookies
 import { useCookies } from "react-cookie";
