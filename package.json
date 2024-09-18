@@ -26,7 +26,7 @@
     "dompurify": "^3.1.6",
     "framer-motion": "^11.5.4",
     "fuse.js": "^7.0.0",
-    "next": "14.2.5",
+    "next": "14.2.10",
     "notion-to-md": "2.1.0",
     "parse-json": "^8.1.0",
     "react": "^18",
